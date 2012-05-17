@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  NotificationCenterPlugin
+
+  Created by Zachary Waldowski on 5/16/12.
+  Copyright (c) 2012 Zachary Waldowski. All rights reserved.
+*/
+
+"DisplayNotificationShort" = "Display a system notification";
+"DisplayNotificationLong" = "Display a system notification in Notification Center";
+"ReadTITLE" = "Read";
+"ShowTITLE" = "Show";

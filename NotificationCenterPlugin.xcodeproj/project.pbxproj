@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0F934F1564A6060039690B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C65B8091547965400795433 /* Foundation.framework */; };
+		6C0F93521564A62B0039690B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6C0F93541564A62B0039690B /* Localizable.strings */; };
+		6C65B81C1547969800795433 /* DZNotificationCenterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C65B81B1547969800795433 /* DZNotificationCenterPlugin.m */; };
+		6C81B48E1564894800037B13 /* NotificationCenterPlugin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6C81B48D1564894800037B13 /* NotificationCenterPlugin.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C0F93531564A62B0039690B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6C65B8011547965400795433 /* NotificationCenterPlugin.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationCenterPlugin.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C65B8091547965400795433 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6C65B80C1547965400795433 /* NotificationCenterPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotificationCenterPlugin-Info.plist"; sourceTree = "<group>"; };
+		6C65B8101547965400795433 /* NotificationCenterPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationCenterPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		6C65B81A1547969800795433 /* DZNotificationCenterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNotificationCenterPlugin.h; sourceTree = "<group>"; };
+		6C65B81B1547969800795433 /* DZNotificationCenterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNotificationCenterPlugin.m; sourceTree = "<group>"; };
+		6C81B4161564885C00037B13 /* AdiumAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdiumAuthorization.h; sourceTree = "<group>"; };
+		6C81B4171564885C00037B13 /* AIAbstractAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAbstractAccount.h; sourceTree = "<group>"; };
+		6C81B4181564885C00037B13 /* AIAbstractListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAbstractListController.h; sourceTree = "<group>"; };
+		6C81B4191564885C00037B13 /* AIAbstractListObjectMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAbstractListObjectMenu.h; sourceTree = "<group>"; };
+		6C81B41A1564885C00037B13 /* AIAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAccount.h; sourceTree = "<group>"; };
+		6C81B41B1564885C00037B13 /* AIAccountControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAccountControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B41C1564885C00037B13 /* AIAccountMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAccountMenu.h; sourceTree = "<group>"; };
+		6C81B41D1564885C00037B13 /* AIAccountPlusFieldPromptController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAccountPlusFieldPromptController.h; sourceTree = "<group>"; };
+		6C81B41E1564885C00037B13 /* AIAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAccountViewController.h; sourceTree = "<group>"; };
+		6C81B41F1564885C00037B13 /* AIActionDetailsPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIActionDetailsPane.h; sourceTree = "<group>"; };
+		6C81B4201564885C00037B13 /* AIAddressBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAddressBookController.h; sourceTree = "<group>"; };
+		6C81B4211564885C00037B13 /* AIAddressBookUserIconSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAddressBookUserIconSource.h; sourceTree = "<group>"; };
+		6C81B4221564885C00037B13 /* AIAdiumProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAdiumProtocol.h; sourceTree = "<group>"; };
+		6C81B4231564885C00037B13 /* AIApplescriptabilityControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIApplescriptabilityControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4241564885C00037B13 /* AIAuthorizationRequestsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAuthorizationRequestsWindowController.h; sourceTree = "<group>"; };
+		6C81B4251564885C00037B13 /* AIChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChat.h; sourceTree = "<group>"; };
+		6C81B4261564885C00037B13 /* AIChatControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIChatControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4271564885C00037B13 /* AIColorPickerSliders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIColorPickerSliders.h; sourceTree = "<group>"; };
+		6C81B4281564885C00037B13 /* AIContactAlertsControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactAlertsControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4291564885C00037B13 /* AIContactControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B42A1564885C00037B13 /* AIContactHidingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactHidingController.h; sourceTree = "<group>"; };
+		6C81B42B1564885C00037B13 /* AIContactInfoPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactInfoPane.h; sourceTree = "<group>"; };
+		6C81B42C1564885C00037B13 /* AIContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactList.h; sourceTree = "<group>"; };
+		6C81B42D1564885C00037B13 /* AIContactMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactMenu.h; sourceTree = "<group>"; };
+		6C81B42E1564885C00037B13 /* AIContactObserverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContactObserverManager.h; sourceTree = "<group>"; };
+		6C81B42F1564885C00037B13 /* AIContentContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentContext.h; sourceTree = "<group>"; };
+		6C81B4301564885C00037B13 /* AIContentControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4311564885C00037B13 /* AIContentEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentEvent.h; sourceTree = "<group>"; };
+		6C81B4321564885C00037B13 /* AIContentMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentMessage.h; sourceTree = "<group>"; };
+		6C81B4331564885C00037B13 /* AIContentNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentNotification.h; sourceTree = "<group>"; };
+		6C81B4341564885C00037B13 /* AIContentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentObject.h; sourceTree = "<group>"; };
+		6C81B4351564885C00037B13 /* AIContentStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentStatus.h; sourceTree = "<group>"; };
+		6C81B4361564885C00037B13 /* AIContentTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentTopic.h; sourceTree = "<group>"; };
+		6C81B4371564885C00037B13 /* AIContentTyping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContentTyping.h; sourceTree = "<group>"; };
+		6C81B4381564885C00037B13 /* AIContextMenuTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIContextMenuTextView.h; sourceTree = "<group>"; };
+		6C81B4391564885C00037B13 /* AIControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B43A1564885C00037B13 /* AICorePluginLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICorePluginLoader.h; sourceTree = "<group>"; };
+		6C81B43B1564885C00037B13 /* AIDebugControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDebugControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B43C1564885C00037B13 /* AIDockControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDockControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B43D1564885C00037B13 /* AIEditStateWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEditStateWindowController.h; sourceTree = "<group>"; };
+		6C81B43E1564885C00037B13 /* AIEmoticon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticon.h; sourceTree = "<group>"; };
+		6C81B43F1564885C00037B13 /* AIEmoticonControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4401564885C00037B13 /* AIEmoticonPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEmoticonPack.h; sourceTree = "<group>"; };
+		6C81B4411564885C00037B13 /* AIFileTransferControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileTransferControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4421564885C00037B13 /* AIGroupChatStatusIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGroupChatStatusIcons.h; sourceTree = "<group>"; };
+		6C81B4431564885C00037B13 /* AIHTMLDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHTMLDecoder.h; sourceTree = "<group>"; };
+		6C81B4441564885C00037B13 /* AIIconState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIIconState.h; sourceTree = "<group>"; };
+		6C81B4451564885C00037B13 /* AIImageTextCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageTextCellView.h; sourceTree = "<group>"; };
+		6C81B4461564885C00037B13 /* AIInterfaceControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIInterfaceControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4471564885C00037B13 /* AIJavaControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIJavaControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4481564885C00037B13 /* AIListBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListBookmark.h; sourceTree = "<group>"; };
+		6C81B4491564885C00037B13 /* AIListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListCell.h; sourceTree = "<group>"; };
+		6C81B44A1564885C00037B13 /* AIListContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContact.h; sourceTree = "<group>"; };
+		6C81B44B1564885C00037B13 /* AIListContactBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContactBubbleCell.h; sourceTree = "<group>"; };
+		6C81B44C1564885C00037B13 /* AIListContactBubbleToFitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContactBubbleToFitCell.h; sourceTree = "<group>"; };
+		6C81B44D1564885C00037B13 /* AIListContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContactCell.h; sourceTree = "<group>"; };
+		6C81B44E1564885C00037B13 /* AIListContactGroupChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContactGroupChatCell.h; sourceTree = "<group>"; };
+		6C81B44F1564885C00037B13 /* AIListContactMockieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListContactMockieCell.h; sourceTree = "<group>"; };
+		6C81B4501564885C00037B13 /* AIListGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListGroup.h; sourceTree = "<group>"; };
+		6C81B4511564885C00037B13 /* AIListGroupBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListGroupBubbleCell.h; sourceTree = "<group>"; };
+		6C81B4521564885C00037B13 /* AIListGroupBubbleToFitCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListGroupBubbleToFitCell.h; sourceTree = "<group>"; };
+		6C81B4531564885C00037B13 /* AIListGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListGroupCell.h; sourceTree = "<group>"; };
+		6C81B4541564885C00037B13 /* AIListGroupMockieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListGroupMockieCell.h; sourceTree = "<group>"; };
+		6C81B4551564885C00037B13 /* AIListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListObject.h; sourceTree = "<group>"; };
+		6C81B4561564885C00037B13 /* AIListOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIListOutlineView.h; sourceTree = "<group>"; };
+		6C81B4571564885C00037B13 /* AILocalizationAssistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILocalizationAssistance.h; sourceTree = "<group>"; };
+		6C81B4581564885C00037B13 /* AILocalizationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILocalizationButton.h; sourceTree = "<group>"; };
+		6C81B4591564885C00037B13 /* AILocalizationButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILocalizationButtonCell.h; sourceTree = "<group>"; };
+		6C81B45A1564885C00037B13 /* AILocalizationTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILocalizationTextField.h; sourceTree = "<group>"; };
+		6C81B45B1564885C00037B13 /* AILoginControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILoginControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B45C1564885C00037B13 /* AIMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMedia.h; sourceTree = "<group>"; };
+		6C81B45D1564885C00037B13 /* AIMediaControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMediaControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B45E1564885C00037B13 /* AIMenuControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMenuControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B45F1564885C00037B13 /* AIMessageEntryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMessageEntryTextView.h; sourceTree = "<group>"; };
+		6C81B4601564885C00037B13 /* AIMetaContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMetaContact.h; sourceTree = "<group>"; };
+		6C81B4611564885C00037B13 /* AIModularPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIModularPane.h; sourceTree = "<group>"; };
+		6C81B4621564885C00037B13 /* AIModularPaneCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIModularPaneCategoryView.h; sourceTree = "<group>"; };
+		6C81B4631564885C00037B13 /* AIPathUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPathUtilities.h; sourceTree = "<group>"; };
+		6C81B4641564885C00037B13 /* AIPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlugin.h; sourceTree = "<group>"; };
+		6C81B4651564885C00037B13 /* AIPreferenceControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPreferenceControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4661564885C00037B13 /* AIPreferencePane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPreferencePane.h; sourceTree = "<group>"; };
+		6C81B4671564885C00037B13 /* AIProxyListObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIProxyListObject.h; sourceTree = "<group>"; };
+		6C81B4681564885C00037B13 /* AIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIService.h; sourceTree = "<group>"; };
+		6C81B4691564885C00037B13 /* AIServiceIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIServiceIcons.h; sourceTree = "<group>"; };
+		6C81B46A1564885C00037B13 /* AISharedAdium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISharedAdium.h; sourceTree = "<group>"; };
+		6C81B46B1564885C00037B13 /* AISocialNetworkingStatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISocialNetworkingStatusMenu.h; sourceTree = "<group>"; };
+		6C81B46C1564885C00037B13 /* AISortController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISortController.h; sourceTree = "<group>"; };
+		6C81B46D1564885C00037B13 /* AISoundControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISoundControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B46E1564885C00037B13 /* AISoundSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISoundSet.h; sourceTree = "<group>"; };
+		6C81B46F1564885C00037B13 /* AIStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatus.h; sourceTree = "<group>"; };
+		6C81B4701564885C00037B13 /* AIStatusControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4711564885C00037B13 /* AIStatusDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusDefines.h; sourceTree = "<group>"; };
+		6C81B4721564885C00037B13 /* AIStatusGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusGroup.h; sourceTree = "<group>"; };
+		6C81B4731564885C00037B13 /* AIStatusIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusIcons.h; sourceTree = "<group>"; };
+		6C81B4741564885C00037B13 /* AIStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusItem.h; sourceTree = "<group>"; };
+		6C81B4751564885C00037B13 /* AIStatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStatusMenu.h; sourceTree = "<group>"; };
+		6C81B4761564885C00037B13 /* AITextAttachmentExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextAttachmentExtension.h; sourceTree = "<group>"; };
+		6C81B4771564885C00037B13 /* AIToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIToolbar.h; sourceTree = "<group>"; };
+		6C81B4781564885C00037B13 /* AIToolbarControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIToolbarControllerProtocol.h; sourceTree = "<group>"; };
+		6C81B4791564885C00037B13 /* AIUserIcons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIUserIcons.h; sourceTree = "<group>"; };
+		6C81B47A1564885C00037B13 /* AIWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIWindowController.h; sourceTree = "<group>"; };
+		6C81B47B1564885C00037B13 /* AIXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXMLElement.h; sourceTree = "<group>"; };
+		6C81B47C1564885C00037B13 /* AIXtraInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIXtraInfo.h; sourceTree = "<group>"; };
+		6C81B47D1564885C00037B13 /* CSNewContactAlertWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNewContactAlertWindowController.h; sourceTree = "<group>"; };
+		6C81B47E1564885C00037B13 /* DCJoinChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJoinChatViewController.h; sourceTree = "<group>"; };
+		6C81B47F1564885C00037B13 /* DCJoinChatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCJoinChatWindowController.h; sourceTree = "<group>"; };
+		6C81B4801564885C00037B13 /* ESApplescriptabilityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESApplescriptabilityController.h; sourceTree = "<group>"; };
+		6C81B4811564885C00037B13 /* ESContactAlertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESContactAlertsViewController.h; sourceTree = "<group>"; };
+		6C81B4821564885C00037B13 /* ESDebugAILog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDebugAILog.h; sourceTree = "<group>"; };
+		6C81B4831564885C00037B13 /* ESFileTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileTransfer.h; sourceTree = "<group>"; };
+		6C81B4841564885C00037B13 /* ESFileWrapperExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESFileWrapperExtension.h; sourceTree = "<group>"; };
+		6C81B4851564885C00037B13 /* ESObjectWithProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESObjectWithProperties.h; sourceTree = "<group>"; };
+		6C81B4861564885C00037B13 /* ESPresetManagementController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPresetManagementController.h; sourceTree = "<group>"; };
+		6C81B4871564885C00037B13 /* ESPresetNameSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPresetNameSheetController.h; sourceTree = "<group>"; };
+		6C81B4881564885C00037B13 /* ESTextAndButtonsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTextAndButtonsWindowController.h; sourceTree = "<group>"; };
+		6C81B4891564885C00037B13 /* JVFontPreviewField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFontPreviewField.h; sourceTree = "<group>"; };
+		6C81B48A1564885C00037B13 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
+		6C81B48D1564894800037B13 /* NotificationCenterPlugin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NotificationCenterPlugin.icns; sourceTree = "<group>"; };
+		6C81B49415648C0800037B13 /* AIAlternatingRowOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAlternatingRowOutlineView.h; sourceTree = "<group>"; };
+		6C81B49515648C0800037B13 /* AIAlternatingRowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAlternatingRowTableView.h; sourceTree = "<group>"; };
+		6C81B49615648C0800037B13 /* AIApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIApplicationAdditions.h; sourceTree = "<group>"; };
+		6C81B49715648C0800037B13 /* AIArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIArrayAdditions.h; sourceTree = "<group>"; };
+		6C81B49815648C0800037B13 /* AIAttributedStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAttributedStringAdditions.h; sourceTree = "<group>"; };
+		6C81B49915648C0800037B13 /* AIAutoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAutoScrollView.h; sourceTree = "<group>"; };
+		6C81B49A15648C0800037B13 /* AIBezierPathAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBezierPathAdditions.h; sourceTree = "<group>"; };
+		6C81B49B15648C0800037B13 /* AIBorderlessWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBorderlessWindow.h; sourceTree = "<group>"; };
+		6C81B49C15648C0800037B13 /* AIBundleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBundleAdditions.h; sourceTree = "<group>"; };
+		6C81B49D15648C0800037B13 /* AICharacterSetAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICharacterSetAdditions.h; sourceTree = "<group>"; };
+		6C81B49E15648C0800037B13 /* AIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIColorAdditions.h; sourceTree = "<group>"; };
+		6C81B49F15648C0800037B13 /* AICompletingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICompletingTextField.h; sourceTree = "<group>"; };
+		6C81B4A015648C0800037B13 /* AICursorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AICursorAdditions.h; sourceTree = "<group>"; };
+		6C81B4A115648C0800037B13 /* AIDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDataAdditions.h; sourceTree = "<group>"; };
+		6C81B4A215648C0800037B13 /* AIDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDateAdditions.h; sourceTree = "<group>"; };
+		6C81B4A315648C0800037B13 /* AIDateFormatterAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDateFormatterAdditions.h; sourceTree = "<group>"; };
+		6C81B4A415648C0800037B13 /* AIDelayedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDelayedTextField.h; sourceTree = "<group>"; };
+		6C81B4A515648C0800037B13 /* AIDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDictionaryAdditions.h; sourceTree = "<group>"; };
+		6C81B4A615648C0800037B13 /* AIDividedAlternatingRowOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDividedAlternatingRowOutlineView.h; sourceTree = "<group>"; };
+		6C81B4A715648C0800037B13 /* AIDockingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIDockingWindow.h; sourceTree = "<group>"; };
+		6C81B4A815648C0800037B13 /* AIEventAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIEventAdditions.h; sourceTree = "<group>"; };
+		6C81B4A915648C0800037B13 /* AIFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFileManagerAdditions.h; sourceTree = "<group>"; };
+		6C81B4AA15648C0800037B13 /* AIFlexibleLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFlexibleLink.h; sourceTree = "<group>"; };
+		6C81B4AB15648C0800037B13 /* AIFlexibleToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFlexibleToolbarItem.h; sourceTree = "<group>"; };
+		6C81B4AC15648C0800037B13 /* AIFloater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFloater.h; sourceTree = "<group>"; };
+		6C81B4AD15648C0800037B13 /* AIFontAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFontAdditions.h; sourceTree = "<group>"; };
+		6C81B4AE15648C0800037B13 /* AIFontManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFontManagerAdditions.h; sourceTree = "<group>"; };
+		6C81B4AF15648C0800037B13 /* AIFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFunctions.h; sourceTree = "<group>"; };
+		6C81B4B015648C0800037B13 /* AIGenericViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGenericViewCell.h; sourceTree = "<group>"; };
+		6C81B4B115648C0800037B13 /* AIGradientAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIGradientAdditions.h; sourceTree = "<group>"; };
+		6C81B4B215648C0800037B13 /* AIHighlightingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHighlightingTextField.h; sourceTree = "<group>"; };
+		6C81B4B315648C0800037B13 /* AIHostReachabilityMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIHostReachabilityMonitor.h; sourceTree = "<group>"; };
+		6C81B4B415648C0800037B13 /* AIImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageAdditions.h; sourceTree = "<group>"; };
+		6C81B4B515648C0800037B13 /* AIImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageButton.h; sourceTree = "<group>"; };
+		6C81B4B615648C0800037B13 /* AIImageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageCollectionView.h; sourceTree = "<group>"; };
+		6C81B4B715648C0800037B13 /* AIImageDrawingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageDrawingAdditions.h; sourceTree = "<group>"; };
+		6C81B4B815648C0800037B13 /* AIImageTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageTextCell.h; sourceTree = "<group>"; };
+		6C81B4B915648C0800037B13 /* AIImageViewWithImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIImageViewWithImagePicker.h; sourceTree = "<group>"; };
+		6C81B4BA15648C0800037B13 /* AIKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIKeychain.h; sourceTree = "<group>"; };
+		6C81B4BB15648C0800037B13 /* AILinkTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILinkTextView.h; sourceTree = "<group>"; };
+		6C81B4BC15648C0800037B13 /* AILinkTrackingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AILinkTrackingController.h; sourceTree = "<group>"; };
+		6C81B4BD15648C0800037B13 /* AIMathCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMathCompatibility.h; sourceTree = "<group>"; };
+		6C81B4BE15648C0800037B13 /* AIMenuAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMenuAdditions.h; sourceTree = "<group>"; };
+		6C81B4BF15648C0800037B13 /* AIMiniToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbar.h; sourceTree = "<group>"; };
+		6C81B4C015648C0800037B13 /* AIMiniToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbarButton.h; sourceTree = "<group>"; };
+		6C81B4C115648C0800037B13 /* AIMiniToolbarCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbarCenter.h; sourceTree = "<group>"; };
+		6C81B4C215648C0800037B13 /* AIMiniToolbarCustomizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbarCustomizeController.h; sourceTree = "<group>"; };
+		6C81B4C315648C0800037B13 /* AIMiniToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbarItem.h; sourceTree = "<group>"; };
+		6C81B4C415648C0800037B13 /* AIMiniToolbarTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMiniToolbarTableView.h; sourceTree = "<group>"; };
+		6C81B4C515648C0800037B13 /* AIMultiCellOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMultiCellOutlineView.h; sourceTree = "<group>"; };
+		6C81B4C615648C0800037B13 /* AIMutableOwnerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMutableOwnerArray.h; sourceTree = "<group>"; };
+		6C81B4C715648C0800037B13 /* AIMutableStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMutableStringAdditions.h; sourceTree = "<group>"; };
+		6C81B4C815648C0800037B13 /* AIObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIObjectAdditions.h; sourceTree = "<group>"; };
+		6C81B4C915648C0800037B13 /* AIOSCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOSCompatibility.h; sourceTree = "<group>"; };
+		6C81B4CA15648C0800037B13 /* AIOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOutlineView.h; sourceTree = "<group>"; };
+		6C81B4CB15648C0800037B13 /* AIOutlineViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIOutlineViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4CC15648C0800037B13 /* AIParagraphStyleAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIParagraphStyleAdditions.h; sourceTree = "<group>"; };
+		6C81B4CD15648C0800037B13 /* AIPasteboardAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPasteboardAdditions.h; sourceTree = "<group>"; };
+		6C81B4CE15648C0800037B13 /* AIPopUpButtonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPopUpButtonAdditions.h; sourceTree = "<group>"; };
+		6C81B4CF15648C0800037B13 /* AIPreferenceCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPreferenceCollectionView.h; sourceTree = "<group>"; };
+		6C81B4D015648C0800037B13 /* AIProgressDataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIProgressDataUploader.h; sourceTree = "<group>"; };
+		6C81B4D115648C0800037B13 /* AIRichTextCoercer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRichTextCoercer.h; sourceTree = "<group>"; };
+		6C81B4D215648C0800037B13 /* AIRolloverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRolloverButton.h; sourceTree = "<group>"; };
+		6C81B4D315648C0800037B13 /* AIScaledImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIScaledImageCell.h; sourceTree = "<group>"; };
+		6C81B4D415648C0800037B13 /* AIScannerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIScannerAdditions.h; sourceTree = "<group>"; };
+		6C81B4D515648C0800037B13 /* AIScrollViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIScrollViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4D615648C0800037B13 /* AISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISegmentedControl.h; sourceTree = "<group>"; };
+		6C81B4D715648C0800037B13 /* AISendingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISendingTextView.h; sourceTree = "<group>"; };
+		6C81B4D815648C0800037B13 /* AIShadowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIShadowAdditions.h; sourceTree = "<group>"; };
+		6C81B4D915648C0800037B13 /* AISharedWriterQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISharedWriterQueue.h; sourceTree = "<group>"; };
+		6C81B4DA15648C0800037B13 /* AISleepNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISleepNotification.h; sourceTree = "<group>"; };
+		6C81B4DB15648C0800037B13 /* AISmoothTooltipTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISmoothTooltipTracker.h; sourceTree = "<group>"; };
+		6C81B4DC15648C0800037B13 /* AISplitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISplitView.h; sourceTree = "<group>"; };
+		6C81B4DD15648C0800037B13 /* AIStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStringAdditions.h; sourceTree = "<group>"; };
+		6C81B4DE15648C0800037B13 /* AIStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStringFormatter.h; sourceTree = "<group>"; };
+		6C81B4DF15648C0800037B13 /* AIStringUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIStringUtilities.h; sourceTree = "<group>"; };
+		6C81B4E015648C0800037B13 /* AISystemNetworkDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AISystemNetworkDefaults.h; sourceTree = "<group>"; };
+		6C81B4E115648C0800037B13 /* AITableViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITableViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4E215648C0800037B13 /* AITabViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITabViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4E315648C0800037B13 /* AITextAttachmentAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextAttachmentAdditions.h; sourceTree = "<group>"; };
+		6C81B4E415648C0800037B13 /* AITextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextAttributes.h; sourceTree = "<group>"; };
+		6C81B4E515648C0800037B13 /* AITextFieldWithDraggingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextFieldWithDraggingDelegate.h; sourceTree = "<group>"; };
+		6C81B4E615648C0800037B13 /* AITextViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4E715648C0800037B13 /* AITextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITextViewWithPlaceholder.h; sourceTree = "<group>"; };
+		6C81B4E815648C0800037B13 /* AIToolbarUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIToolbarUtilities.h; sourceTree = "<group>"; };
+		6C81B4E915648C0800037B13 /* AITooltipUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AITooltipUtilities.h; sourceTree = "<group>"; };
+		6C81B4EA15648C0800037B13 /* AIURLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIURLAdditions.h; sourceTree = "<group>"; };
+		6C81B4EB15648C0800037B13 /* AIVariableHeightFlexibleColumnsOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVariableHeightFlexibleColumnsOutlineView.h; sourceTree = "<group>"; };
+		6C81B4EC15648C0800037B13 /* AIVariableHeightOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVariableHeightOutlineView.h; sourceTree = "<group>"; };
+		6C81B4ED15648C0800037B13 /* AIVerticallyCenteredTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIVerticallyCenteredTextCell.h; sourceTree = "<group>"; };
+		6C81B4EE15648C0800037B13 /* AIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIViewAdditions.h; sourceTree = "<group>"; };
+		6C81B4EF15648C0800037B13 /* AIWindowAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIWindowAdditions.h; sourceTree = "<group>"; };
+		6C81B4F015648C0800037B13 /* AIWindowControllerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIWindowControllerAdditions.h; sourceTree = "<group>"; };
+		6C81B4F115648C0800037B13 /* JVMarkedScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVMarkedScroller.h; sourceTree = "<group>"; };
+		6C81B4F215648C0800037B13 /* MVMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVMenuButton.h; sourceTree = "<group>"; };
+		6C81B4F315648C0800037B13 /* NSCalendarDate+ISO8601Parsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendarDate+ISO8601Parsing.h"; sourceTree = "<group>"; };
+		6C81B4F415648C0800037B13 /* NSCalendarDate+ISO8601Unparsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendarDate+ISO8601Unparsing.h"; sourceTree = "<group>"; };
+		6C81B4F515648C0800037B13 /* OWAddressBookAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWAddressBookAdditions.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C65B7FE1547965400795433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0F934F1564A6060039690B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C65B7F61547965400795433 = {
+			isa = PBXGroup;
+			children = (
+				6C81B49315648C0800037B13 /* AIUtilities Headers */,
+				6C81B4151564885C00037B13 /* Adium Headers */,
+				6C65B80A1547965400795433 /* NotificationCenterPlugin */,
+				6C65B8031547965400795433 /* Frameworks */,
+				6C65B8021547965400795433 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C65B8021547965400795433 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C65B8011547965400795433 /* NotificationCenterPlugin.AdiumPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C65B8031547965400795433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C65B8091547965400795433 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C65B80A1547965400795433 /* NotificationCenterPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				6C65B81A1547969800795433 /* DZNotificationCenterPlugin.h */,
+				6C65B81B1547969800795433 /* DZNotificationCenterPlugin.m */,
+				6C65B80B1547965400795433 /* Supporting Files */,
+			);
+			path = NotificationCenterPlugin;
+			sourceTree = "<group>";
+		};
+		6C65B80B1547965400795433 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C0F93541564A62B0039690B /* Localizable.strings */,
+				6C81B48D1564894800037B13 /* NotificationCenterPlugin.icns */,
+				6C65B80C1547965400795433 /* NotificationCenterPlugin-Info.plist */,
+				6C65B8101547965400795433 /* NotificationCenterPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C81B4151564885C00037B13 /* Adium Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6C81B4161564885C00037B13 /* AdiumAuthorization.h */,
+				6C81B4171564885C00037B13 /* AIAbstractAccount.h */,
+				6C81B4181564885C00037B13 /* AIAbstractListController.h */,
+				6C81B4191564885C00037B13 /* AIAbstractListObjectMenu.h */,
+				6C81B41A1564885C00037B13 /* AIAccount.h */,
+				6C81B41B1564885C00037B13 /* AIAccountControllerProtocol.h */,
+				6C81B41C1564885C00037B13 /* AIAccountMenu.h */,
+				6C81B41D1564885C00037B13 /* AIAccountPlusFieldPromptController.h */,
+				6C81B41E1564885C00037B13 /* AIAccountViewController.h */,
+				6C81B41F1564885C00037B13 /* AIActionDetailsPane.h */,
+				6C81B4201564885C00037B13 /* AIAddressBookController.h */,
+				6C81B4211564885C00037B13 /* AIAddressBookUserIconSource.h */,
+				6C81B4221564885C00037B13 /* AIAdiumProtocol.h */,
+				6C81B4231564885C00037B13 /* AIApplescriptabilityControllerProtocol.h */,
+				6C81B4241564885C00037B13 /* AIAuthorizationRequestsWindowController.h */,
+				6C81B4251564885C00037B13 /* AIChat.h */,
+				6C81B4261564885C00037B13 /* AIChatControllerProtocol.h */,
+				6C81B4271564885C00037B13 /* AIColorPickerSliders.h */,
+				6C81B4281564885C00037B13 /* AIContactAlertsControllerProtocol.h */,
+				6C81B4291564885C00037B13 /* AIContactControllerProtocol.h */,
+				6C81B42A1564885C00037B13 /* AIContactHidingController.h */,
+				6C81B42B1564885C00037B13 /* AIContactInfoPane.h */,
+				6C81B42C1564885C00037B13 /* AIContactList.h */,
+				6C81B42D1564885C00037B13 /* AIContactMenu.h */,
+				6C81B42E1564885C00037B13 /* AIContactObserverManager.h */,
+				6C81B42F1564885C00037B13 /* AIContentContext.h */,
+				6C81B4301564885C00037B13 /* AIContentControllerProtocol.h */,
+				6C81B4311564885C00037B13 /* AIContentEvent.h */,
+				6C81B4321564885C00037B13 /* AIContentMessage.h */,
+				6C81B4331564885C00037B13 /* AIContentNotification.h */,
+				6C81B4341564885C00037B13 /* AIContentObject.h */,
+				6C81B4351564885C00037B13 /* AIContentStatus.h */,
+				6C81B4361564885C00037B13 /* AIContentTopic.h */,
+				6C81B4371564885C00037B13 /* AIContentTyping.h */,
+				6C81B4381564885C00037B13 /* AIContextMenuTextView.h */,
+				6C81B4391564885C00037B13 /* AIControllerProtocol.h */,
+				6C81B43A1564885C00037B13 /* AICorePluginLoader.h */,
+				6C81B43B1564885C00037B13 /* AIDebugControllerProtocol.h */,
+				6C81B43C1564885C00037B13 /* AIDockControllerProtocol.h */,
+				6C81B43D1564885C00037B13 /* AIEditStateWindowController.h */,
+				6C81B43E1564885C00037B13 /* AIEmoticon.h */,
+				6C81B43F1564885C00037B13 /* AIEmoticonControllerProtocol.h */,
+				6C81B4401564885C00037B13 /* AIEmoticonPack.h */,
+				6C81B4411564885C00037B13 /* AIFileTransferControllerProtocol.h */,
+				6C81B4421564885C00037B13 /* AIGroupChatStatusIcons.h */,
+				6C81B4431564885C00037B13 /* AIHTMLDecoder.h */,
+				6C81B4441564885C00037B13 /* AIIconState.h */,
+				6C81B4451564885C00037B13 /* AIImageTextCellView.h */,
+				6C81B4461564885C00037B13 /* AIInterfaceControllerProtocol.h */,
+				6C81B4471564885C00037B13 /* AIJavaControllerProtocol.h */,
+				6C81B4481564885C00037B13 /* AIListBookmark.h */,
+				6C81B4491564885C00037B13 /* AIListCell.h */,
+				6C81B44A1564885C00037B13 /* AIListContact.h */,
+				6C81B44B1564885C00037B13 /* AIListContactBubbleCell.h */,
+				6C81B44C1564885C00037B13 /* AIListContactBubbleToFitCell.h */,
+				6C81B44D1564885C00037B13 /* AIListContactCell.h */,
+				6C81B44E1564885C00037B13 /* AIListContactGroupChatCell.h */,
+				6C81B44F1564885C00037B13 /* AIListContactMockieCell.h */,
+				6C81B4501564885C00037B13 /* AIListGroup.h */,
+				6C81B4511564885C00037B13 /* AIListGroupBubbleCell.h */,
+				6C81B4521564885C00037B13 /* AIListGroupBubbleToFitCell.h */,
+				6C81B4531564885C00037B13 /* AIListGroupCell.h */,
+				6C81B4541564885C00037B13 /* AIListGroupMockieCell.h */,
+				6C81B4551564885C00037B13 /* AIListObject.h */,
+				6C81B4561564885C00037B13 /* AIListOutlineView.h */,
+				6C81B4571564885C00037B13 /* AILocalizationAssistance.h */,
+				6C81B4581564885C00037B13 /* AILocalizationButton.h */,
+				6C81B4591564885C00037B13 /* AILocalizationButtonCell.h */,
+				6C81B45A1564885C00037B13 /* AILocalizationTextField.h */,
+				6C81B45B1564885C00037B13 /* AILoginControllerProtocol.h */,
+				6C81B45C1564885C00037B13 /* AIMedia.h */,
+				6C81B45D1564885C00037B13 /* AIMediaControllerProtocol.h */,
+				6C81B45E1564885C00037B13 /* AIMenuControllerProtocol.h */,
+				6C81B45F1564885C00037B13 /* AIMessageEntryTextView.h */,
+				6C81B4601564885C00037B13 /* AIMetaContact.h */,
+				6C81B4611564885C00037B13 /* AIModularPane.h */,
+				6C81B4621564885C00037B13 /* AIModularPaneCategoryView.h */,
+				6C81B4631564885C00037B13 /* AIPathUtilities.h */,
+				6C81B4641564885C00037B13 /* AIPlugin.h */,
+				6C81B4651564885C00037B13 /* AIPreferenceControllerProtocol.h */,
+				6C81B4661564885C00037B13 /* AIPreferencePane.h */,
+				6C81B4671564885C00037B13 /* AIProxyListObject.h */,
+				6C81B4681564885C00037B13 /* AIService.h */,
+				6C81B4691564885C00037B13 /* AIServiceIcons.h */,
+				6C81B46A1564885C00037B13 /* AISharedAdium.h */,
+				6C81B46B1564885C00037B13 /* AISocialNetworkingStatusMenu.h */,
+				6C81B46C1564885C00037B13 /* AISortController.h */,
+				6C81B46D1564885C00037B13 /* AISoundControllerProtocol.h */,
+				6C81B46E1564885C00037B13 /* AISoundSet.h */,
+				6C81B46F1564885C00037B13 /* AIStatus.h */,
+				6C81B4701564885C00037B13 /* AIStatusControllerProtocol.h */,
+				6C81B4711564885C00037B13 /* AIStatusDefines.h */,
+				6C81B4721564885C00037B13 /* AIStatusGroup.h */,
+				6C81B4731564885C00037B13 /* AIStatusIcons.h */,
+				6C81B4741564885C00037B13 /* AIStatusItem.h */,
+				6C81B4751564885C00037B13 /* AIStatusMenu.h */,
+				6C81B4761564885C00037B13 /* AITextAttachmentExtension.h */,
+				6C81B4771564885C00037B13 /* AIToolbar.h */,
+				6C81B4781564885C00037B13 /* AIToolbarControllerProtocol.h */,
+				6C81B4791564885C00037B13 /* AIUserIcons.h */,
+				6C81B47A1564885C00037B13 /* AIWindowController.h */,
+				6C81B47B1564885C00037B13 /* AIXMLElement.h */,
+				6C81B47C1564885C00037B13 /* AIXtraInfo.h */,
+				6C81B47D1564885C00037B13 /* CSNewContactAlertWindowController.h */,
+				6C81B47E1564885C00037B13 /* DCJoinChatViewController.h */,
+				6C81B47F1564885C00037B13 /* DCJoinChatWindowController.h */,
+				6C81B4801564885C00037B13 /* ESApplescriptabilityController.h */,
+				6C81B4811564885C00037B13 /* ESContactAlertsViewController.h */,
+				6C81B4821564885C00037B13 /* ESDebugAILog.h */,
+				6C81B4831564885C00037B13 /* ESFileTransfer.h */,
+				6C81B4841564885C00037B13 /* ESFileWrapperExtension.h */,
+				6C81B4851564885C00037B13 /* ESObjectWithProperties.h */,
+				6C81B4861564885C00037B13 /* ESPresetManagementController.h */,
+				6C81B4871564885C00037B13 /* ESPresetNameSheetController.h */,
+				6C81B4881564885C00037B13 /* ESTextAndButtonsWindowController.h */,
+				6C81B4891564885C00037B13 /* JVFontPreviewField.h */,
+				6C81B48A1564885C00037B13 /* SS_PreferencePaneProtocol.h */,
+			);
+			name = "Adium Headers";
+			path = Adium;
+			sourceTree = "<group>";
+		};
+		6C81B49315648C0800037B13 /* AIUtilities Headers */ = {
+			isa = PBXGroup;
+			children = (
+				6C81B49415648C0800037B13 /* AIAlternatingRowOutlineView.h */,
+				6C81B49515648C0800037B13 /* AIAlternatingRowTableView.h */,
+				6C81B49615648C0800037B13 /* AIApplicationAdditions.h */,
+				6C81B49715648C0800037B13 /* AIArrayAdditions.h */,
+				6C81B49815648C0800037B13 /* AIAttributedStringAdditions.h */,
+				6C81B49915648C0800037B13 /* AIAutoScrollView.h */,
+				6C81B49A15648C0800037B13 /* AIBezierPathAdditions.h */,
+				6C81B49B15648C0800037B13 /* AIBorderlessWindow.h */,
+				6C81B49C15648C0800037B13 /* AIBundleAdditions.h */,
+				6C81B49D15648C0800037B13 /* AICharacterSetAdditions.h */,
+				6C81B49E15648C0800037B13 /* AIColorAdditions.h */,
+				6C81B49F15648C0800037B13 /* AICompletingTextField.h */,
+				6C81B4A015648C0800037B13 /* AICursorAdditions.h */,
+				6C81B4A115648C0800037B13 /* AIDataAdditions.h */,
+				6C81B4A215648C0800037B13 /* AIDateAdditions.h */,
+				6C81B4A315648C0800037B13 /* AIDateFormatterAdditions.h */,
+				6C81B4A415648C0800037B13 /* AIDelayedTextField.h */,
+				6C81B4A515648C0800037B13 /* AIDictionaryAdditions.h */,
+				6C81B4A615648C0800037B13 /* AIDividedAlternatingRowOutlineView.h */,
+				6C81B4A715648C0800037B13 /* AIDockingWindow.h */,
+				6C81B4A815648C0800037B13 /* AIEventAdditions.h */,
+				6C81B4A915648C0800037B13 /* AIFileManagerAdditions.h */,
+				6C81B4AA15648C0800037B13 /* AIFlexibleLink.h */,
+				6C81B4AB15648C0800037B13 /* AIFlexibleToolbarItem.h */,
+				6C81B4AC15648C0800037B13 /* AIFloater.h */,
+				6C81B4AD15648C0800037B13 /* AIFontAdditions.h */,
+				6C81B4AE15648C0800037B13 /* AIFontManagerAdditions.h */,
+				6C81B4AF15648C0800037B13 /* AIFunctions.h */,
+				6C81B4B015648C0800037B13 /* AIGenericViewCell.h */,
+				6C81B4B115648C0800037B13 /* AIGradientAdditions.h */,
+				6C81B4B215648C0800037B13 /* AIHighlightingTextField.h */,
+				6C81B4B315648C0800037B13 /* AIHostReachabilityMonitor.h */,
+				6C81B4B415648C0800037B13 /* AIImageAdditions.h */,
+				6C81B4B515648C0800037B13 /* AIImageButton.h */,
+				6C81B4B615648C0800037B13 /* AIImageCollectionView.h */,
+				6C81B4B715648C0800037B13 /* AIImageDrawingAdditions.h */,
+				6C81B4B815648C0800037B13 /* AIImageTextCell.h */,
+				6C81B4B915648C0800037B13 /* AIImageViewWithImagePicker.h */,
+				6C81B4BA15648C0800037B13 /* AIKeychain.h */,
+				6C81B4BB15648C0800037B13 /* AILinkTextView.h */,
+				6C81B4BC15648C0800037B13 /* AILinkTrackingController.h */,
+				6C81B4BD15648C0800037B13 /* AIMathCompatibility.h */,
+				6C81B4BE15648C0800037B13 /* AIMenuAdditions.h */,
+				6C81B4BF15648C0800037B13 /* AIMiniToolbar.h */,
+				6C81B4C015648C0800037B13 /* AIMiniToolbarButton.h */,
+				6C81B4C115648C0800037B13 /* AIMiniToolbarCenter.h */,
+				6C81B4C215648C0800037B13 /* AIMiniToolbarCustomizeController.h */,
+				6C81B4C315648C0800037B13 /* AIMiniToolbarItem.h */,
+				6C81B4C415648C0800037B13 /* AIMiniToolbarTableView.h */,
+				6C81B4C515648C0800037B13 /* AIMultiCellOutlineView.h */,
+				6C81B4C615648C0800037B13 /* AIMutableOwnerArray.h */,
+				6C81B4C715648C0800037B13 /* AIMutableStringAdditions.h */,
+				6C81B4C815648C0800037B13 /* AIObjectAdditions.h */,
+				6C81B4C915648C0800037B13 /* AIOSCompatibility.h */,
+				6C81B4CA15648C0800037B13 /* AIOutlineView.h */,
+				6C81B4CB15648C0800037B13 /* AIOutlineViewAdditions.h */,
+				6C81B4CC15648C0800037B13 /* AIParagraphStyleAdditions.h */,
+				6C81B4CD15648C0800037B13 /* AIPasteboardAdditions.h */,
+				6C81B4CE15648C0800037B13 /* AIPopUpButtonAdditions.h */,
+				6C81B4CF15648C0800037B13 /* AIPreferenceCollectionView.h */,
+				6C81B4D015648C0800037B13 /* AIProgressDataUploader.h */,
+				6C81B4D115648C0800037B13 /* AIRichTextCoercer.h */,
+				6C81B4D215648C0800037B13 /* AIRolloverButton.h */,
+				6C81B4D315648C0800037B13 /* AIScaledImageCell.h */,
+				6C81B4D415648C0800037B13 /* AIScannerAdditions.h */,
+				6C81B4D515648C0800037B13 /* AIScrollViewAdditions.h */,
+				6C81B4D615648C0800037B13 /* AISegmentedControl.h */,
+				6C81B4D715648C0800037B13 /* AISendingTextView.h */,
+				6C81B4D815648C0800037B13 /* AIShadowAdditions.h */,
+				6C81B4D915648C0800037B13 /* AISharedWriterQueue.h */,
+				6C81B4DA15648C0800037B13 /* AISleepNotification.h */,
+				6C81B4DB15648C0800037B13 /* AISmoothTooltipTracker.h */,
+				6C81B4DC15648C0800037B13 /* AISplitView.h */,
+				6C81B4DD15648C0800037B13 /* AIStringAdditions.h */,
+				6C81B4DE15648C0800037B13 /* AIStringFormatter.h */,
+				6C81B4DF15648C0800037B13 /* AIStringUtilities.h */,
+				6C81B4E015648C0800037B13 /* AISystemNetworkDefaults.h */,
+				6C81B4E115648C0800037B13 /* AITableViewAdditions.h */,
+				6C81B4E215648C0800037B13 /* AITabViewAdditions.h */,
+				6C81B4E315648C0800037B13 /* AITextAttachmentAdditions.h */,
+				6C81B4E415648C0800037B13 /* AITextAttributes.h */,
+				6C81B4E515648C0800037B13 /* AITextFieldWithDraggingDelegate.h */,
+				6C81B4E615648C0800037B13 /* AITextViewAdditions.h */,
+				6C81B4E715648C0800037B13 /* AITextViewWithPlaceholder.h */,
+				6C81B4E815648C0800037B13 /* AIToolbarUtilities.h */,
+				6C81B4E915648C0800037B13 /* AITooltipUtilities.h */,
+				6C81B4EA15648C0800037B13 /* AIURLAdditions.h */,
+				6C81B4EB15648C0800037B13 /* AIVariableHeightFlexibleColumnsOutlineView.h */,
+				6C81B4EC15648C0800037B13 /* AIVariableHeightOutlineView.h */,
+				6C81B4ED15648C0800037B13 /* AIVerticallyCenteredTextCell.h */,
+				6C81B4EE15648C0800037B13 /* AIViewAdditions.h */,
+				6C81B4EF15648C0800037B13 /* AIWindowAdditions.h */,
+				6C81B4F015648C0800037B13 /* AIWindowControllerAdditions.h */,
+				6C81B4F115648C0800037B13 /* JVMarkedScroller.h */,
+				6C81B4F215648C0800037B13 /* MVMenuButton.h */,
+				6C81B4F315648C0800037B13 /* NSCalendarDate+ISO8601Parsing.h */,
+				6C81B4F415648C0800037B13 /* NSCalendarDate+ISO8601Unparsing.h */,
+				6C81B4F515648C0800037B13 /* OWAddressBookAdditions.h */,
+			);
+			name = "AIUtilities Headers";
+			path = AIUtilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C65B8001547965400795433 /* NotificationCenterPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C65B8131547965400795433 /* Build configuration list for PBXNativeTarget "NotificationCenterPlugin" */;
+			buildPhases = (
+				6C65B7FD1547965400795433 /* Sources */,
+				6C65B7FE1547965400795433 /* Frameworks */,
+				6C65B7FF1547965400795433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationCenterPlugin;
+			productName = Instapaper;
+			productReference = 6C65B8011547965400795433 /* NotificationCenterPlugin.AdiumPlugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C65B7F81547965400795433 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Zachary Waldowski";
+			};
+			buildConfigurationList = 6C65B7FB1547965400795433 /* Build configuration list for PBXProject "NotificationCenterPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6C65B7F61547965400795433;
+			productRefGroup = 6C65B8021547965400795433 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C65B8001547965400795433 /* NotificationCenterPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C65B7FF1547965400795433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C81B48E1564894800037B13 /* NotificationCenterPlugin.icns in Resources */,
+				6C0F93521564A62B0039690B /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C65B7FD1547965400795433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C65B81C1547969800795433 /* DZNotificationCenterPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C0F93541564A62B0039690B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0F93531564A62B0039690B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C65B8111547965400795433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6C65B8121547965400795433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6C65B8141547965400795433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Zachary Waldowski (5A35VN7DW2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Adium.app/Contents/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NotificationCenterPlugin/NotificationCenterPlugin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/";
+				INFOPLIST_FILE = "NotificationCenterPlugin/NotificationCenterPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = NotificationCenterPlugin;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Debug;
+		};
+		6C65B8151547965400795433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Zachary Waldowski (5A35VN7DW2)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+					"\"$(SYSTEM_APPS_DIR)/Adium.app/Contents/Frameworks\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NotificationCenterPlugin/NotificationCenterPlugin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/";
+				INFOPLIST_FILE = "NotificationCenterPlugin/NotificationCenterPlugin-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = NotificationCenterPlugin;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C65B7FB1547965400795433 /* Build configuration list for PBXProject "NotificationCenterPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C65B8111547965400795433 /* Debug */,
+				6C65B8121547965400795433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C65B8131547965400795433 /* Build configuration list for PBXNativeTarget "NotificationCenterPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C65B8141547965400795433 /* Debug */,
+				6C65B8151547965400795433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C65B7F81547965400795433 /* Project object */;
+}
