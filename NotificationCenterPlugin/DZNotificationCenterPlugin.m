@@ -129,6 +129,11 @@ static NSString *const DZNotificationListKey = @"internalObjectID";
 	notification.userInfo = clickContext;
 	notification.hasActionButton = hasActionButton;
 	notification.actionButtonTitle = actionButtonText;
+    
+    NSImage *chatImage = chat.chatImage;
+    if (chatImage) {
+        notification.contentImage = chatImage;
+    }
 	
     [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification: notification];
 	
