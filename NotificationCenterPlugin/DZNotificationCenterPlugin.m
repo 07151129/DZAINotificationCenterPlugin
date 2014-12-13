@@ -121,9 +121,10 @@ static NSString *const DZNotificationListKey = @"internalObjectID";
 	}
 	
 	NSUserNotification *notification = [NSUserNotification new];
-	notification.deliveryDate = [NSDate dateWithTimeIntervalSinceNow:1];
 	notification.soundName = nil;
+
 	notification.title = title;
+
 	notification.subtitle = subtitle;
 	notification.informativeText = description;
 	notification.userInfo = clickContext;
@@ -135,7 +136,7 @@ static NSString *const DZNotificationListKey = @"internalObjectID";
         notification.contentImage = chatImage;
     }
 	
-    [[NSUserNotificationCenter defaultUserNotificationCenter] scheduleNotification: notification];
+    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
 	
 	return YES;
 }
